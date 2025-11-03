@@ -4,7 +4,8 @@ import cv2
 import tensorflow as tf
 
 # Load the saved model
-model = tf.keras.models.load_model('model.keras')
+model = tf.keras.models.load_model('model.h5')
+
 
 # Define class labels (make sure they match your training labels order)
 labels = ['glioma', 'meningioma', 'notumor', 'pituitary']
