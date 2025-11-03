@@ -30,22 +30,23 @@ class_labels = ['glioma', 'meningioma', 'notumor', 'pituitary']
 # Descriptions and recommendations for each class
 class_info = {
     "glioma": {
-        "description": "Glioma tumors arise from glial cells in the brain.",
-        "recommendation": "Consult a neuro-oncologist for diagnosis and treatment options."
+        "description": "Gliomas are tumors that develop from glial cells, which support and protect neurons in the brain. They can vary in aggressiveness and may affect brain function depending on their location and size.",
+        "recommendation": "It is important to consult a neuro-oncologist for a detailed evaluation, which may include MRI scans and biopsy. Treatment options could include surgery, radiation therapy, or chemotherapy based on the tumor type and stage."
     },
     "meningioma": {
-        "description": "Meningioma tumors originate from the meninges, the protective layers of the brain.",
-        "recommendation": "Seek medical evaluation; surgical removal may be required depending on size and symptoms."
+        "description": "Meningiomas are typically slow-growing tumors that arise from the meninges, the protective membranes surrounding the brain and spinal cord. While often benign, they can cause pressure on nearby brain structures.",
+        "recommendation": "Seek medical assessment from a neurosurgeon. Depending on size, location, and symptoms, management may involve careful monitoring or surgical removal. Radiation therapy may be considered in some cases."
     },
     "notumor": {
-        "description": "No visible signs of brain tumor detected.",
-        "recommendation": "If symptoms persist, consult a neurologist for further evaluation."
+        "description": "No signs of a brain tumor were detected in the scan. This indicates that the brain structure appears normal with no visible abnormal growths.",
+        "recommendation": "If you continue to experience symptoms such as headaches, seizures, or neurological changes, it is advised to consult a neurologist for further evaluation and appropriate diagnostic tests."
     },
     "pituitary": {
-        "description": "Pituitary tumors develop in the pituitary gland at the base of the brain.",
-        "recommendation": "Consult an endocrinologist or neurosurgeon for assessment and possible treatment."
+        "description": "Pituitary tumors are abnormal growths in the pituitary gland, a small gland at the base of the brain that regulates hormones affecting growth, metabolism, and reproduction. Tumors may impact hormone balance and vision.",
+        "recommendation": "Consult an endocrinologist or neurosurgeon for comprehensive evaluation. Treatment may include medication, surgical removal, or radiation therapy depending on tumor size, type, and hormone activity."
     }
 }
+
 
 @app.get("/")
 def home():
