@@ -60,9 +60,8 @@ async def predict(file: UploadFile = File(...)):
         image = Image.open(io.BytesIO(contents)).convert("RGB")
         image = image.resize(IMG_SIZE)
 
-        img_array = np.array(image) / 255.0
-        img_array = np.expand_dims(img_array, axis=0)  # Correct shape for model
-
+        img_array = np.array(image)
+        img_array = img_array.reshape(1, 150, 150, 3) 
         # Prediction
         prediction = model.predict(img_array)
         predicted_class_idx = int(np.argmax(prediction))
